@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="main">
+    <div id="calculator">
+        <input id="text" disabled type="text">
+        <div id="buttons">
+            <button type="button" onclick="onButtonPressed(this);">7</button>
+            <button type="button" onclick="onButtonPressed(this);">8</button>
+            <button type="button" onclick="onButtonPressed(this);">9</button>
+            <button id="button-div" onclick="onButtonOpPressed(this);" type="button">/</button>
+
+            <button type="button" onclick="onButtonPressed(this);">4</button>
+            <button type="button" onclick="onButtonPressed(this);">5</button>
+            <button type="button" onclick="onButtonPressed(this);">6</button>
+            <button id="button-mult" onclick="onButtonOpPressed(this);" type="button">*</button>
+
+            <button type="button" onclick="onButtonPressed(this);">1</button>
+            <button type="button" onclick="onButtonPressed(this);">2</button>
+            <button type="button" onclick="onButtonPressed(this);">3</button>
+            <button id="button-sub" onclick="onButtonOpPressed(this);" type="button">-</button>
+            <button id="button-0" onclick="onButtonPressed(this);" type="button">0</button>
+            <button id="button-dot" onclick="onButtonPressed(this);" type="button">.</button>
+            <button id="button-add" onclick="onButtonOpPressed(this);" type="button">+</button>
+            <button id="button-equal" onclick="onButtonEqualPressed(this);" type="button">=</button>
+            <button id="button-clear" onclick="onButtonClearPressed();" type="button">C</button>
+        </div>
+    </div>
+</body>
+</html>
